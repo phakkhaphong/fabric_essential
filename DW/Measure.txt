@@ -1,0 +1,16 @@
+Revenue = SUM(FactInternetSales[SalesAmount])
+
+Cost = sum(FactInternetSales[TotalProductCost])
+
+Profit = [Revenue]-[Cost]
+
+Margin = [Profit]/[Revenue]
+
+Previous Year Revenue = 
+	CALCULATE
+	(
+		[Revenue]
+	,	SAMEPERIODLASTYEAR('dw.DimDate'[FullDateAlternateKey])
+	)
+
+    
