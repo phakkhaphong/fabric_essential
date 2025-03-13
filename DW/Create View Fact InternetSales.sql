@@ -6,7 +6,7 @@ CREATE VIEW dw.vwFactInternetSales
 AS
 SELECT * 
 FROM staging.internetsales
-WHERE ProductKey IS NOT NULL;
+WHERE CustomerKey IS NOT NULL AND ProductKey IS NOT NULL AND OrderDateKey IS NOT NULL;
 
 GO
 
