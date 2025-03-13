@@ -1,5 +1,5 @@
-CREATE SCHEMA dw;
-GO
+--CREATE SCHEMA dw;
+--GO
 
 CREATE TABLE dw.DimCustomer
 (
