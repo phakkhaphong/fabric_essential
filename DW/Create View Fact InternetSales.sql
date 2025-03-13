@@ -2,7 +2,7 @@ CREATE SCHEMA dw;
 GO
 
 
-CREATE VIEW dw.FactInternetSales
+CREATE VIEW dw.vwFactInternetSales
 AS
 SELECT * 
 FROM staging.internetsales
